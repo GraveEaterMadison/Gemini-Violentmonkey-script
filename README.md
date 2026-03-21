@@ -54,7 +54,7 @@
 
 1.  First, install the [Tampermonkey](https://www.tampermonkey.net/) extension.  
     首先安装 **Tampermonkey** 脚本管理器插件。
-2.  Install **Rovetify** via [GreasyFork](这里以后填你的发布链接).  
+2.  Install **Rovetify** via [GreasyFork](https://greasyfork.org/zh-CN/scripts/570598-rovetify-youtube-summary-with-gemini).  
     通过 **GreasyFork** 点击安装 **Rovetify**。
 
 ---
