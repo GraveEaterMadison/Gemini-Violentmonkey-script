@@ -26,6 +26,29 @@
     100% 适配 YouTube 深浅色模式，保持视觉体验的高度一致性。
 
 ---
+---
+
+## 📸 Screenshots / 界面截图
+
+### 1. Gemini API Configuration / API 配置
+<p align="center">
+  <img src="Gemini%20api.png" width="800px" />
+</p>
+
+### 2. Video Summary / 视频总结
+<p align="center">
+  <img src="Video%20summary.png" width="800px" />
+</p>
+
+### 3. Interactive Video Chat / 视频对话助手
+<p align="center">
+  <img src="chat%20about.png" width="800px" />
+</p>
+
+### 4. Bilingual Synced Subtitles / 双语同步字幕
+<p align="center">
+  <img src="double%20subtitles.png" width="800px" />
+</p>
 
 ## 🚀 Installation / 安装
 
