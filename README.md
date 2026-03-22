@@ -77,9 +77,6 @@ If **Rovetify** has saved you time or improved your experience, feel free to buy
 
 👉 [**Buy Me a Coffee**](https://www.buymeacoffee.com/你的ID)
 
-### 💬 Contact / 联系我
-[Telegram](https://t.me/Rove_Coulson)
-
 ---
 
 ## 📝 License
