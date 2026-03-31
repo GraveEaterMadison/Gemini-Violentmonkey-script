@@ -269,6 +269,26 @@ const capturedSubtitles = new Map();
             --gs-shadow: rgba(0, 0, 0, 0.5);
         }
 
+        /* Multi-API Textarea Style */
+        .gemini-settings-textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            background: var(--gs-bg-input);
+            border: 1px solid var(--gs-border-input);
+            border-radius: 6px;
+            color: var(--gs-text-main);
+            font-size: 12px;
+            font-family: monospace;
+            resize: vertical;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            outline: none;
+        }
+        .gemini-settings-textarea:focus {
+            border-color: var(--gs-text-main);
+        }
+
         /* ===== 浅色模式（.light-theme 触发）===== */
         .gemini-sidebar.light-theme {
             --gs-bg-main: #ffffff;
