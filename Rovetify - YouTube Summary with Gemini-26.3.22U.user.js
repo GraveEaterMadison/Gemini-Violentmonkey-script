@@ -220,8 +220,18 @@ const capturedSubtitles = new Map();
     let isRequesting = false;
     let loadingTimerInterval = null;
 
-    function getApiKey() {
-        return GM_getValue(CONFIG.API_KEY_STORAGE, '');
+  //  function getApiKey() {
+  //      return GM_getValue(CONFIG.API_KEY_STORAGE, '');
+  //  }
+    function getRawApiKeys() {
+    return GM_getValue(CONFIG.API_KEY_STORAGE, '');
+   }
+
+    function getApiKeyList() {
+    const raw = getRawApiKeys();
+    return raw.split('\n')
+              .map(key => key.trim())
+              .filter(key => key.length > 0);
     }
 
     function saveApiKey(key) {
