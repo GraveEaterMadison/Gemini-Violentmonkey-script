@@ -2810,9 +2810,6 @@ const capturedSubtitles = new Map();
         });
     }
    // 专用的 Google 翻译免 Key API 调用
-   function translateWithGoogle(text, targetLang) {
-    // ... existing code ...
-   }
 
    // ====================  ====================
    function getApiKeyList() {
