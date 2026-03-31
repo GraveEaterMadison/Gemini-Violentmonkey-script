@@ -2809,7 +2809,18 @@ const capturedSubtitles = new Map();
             });
         });
     }
+   // 专用的 Google 翻译免 Key API 调用
+   function translateWithGoogle(text, targetLang) {
+    // ... existing code ...
+   }
 
+   // ====================  ====================
+   function getApiKeyList() {
+    const keyInput = document.getElementById('gemini-api-key-input');
+    if (!keyInput) return [];
+    return keyInput.value.split('\n').map(key => key.trim()).filter(key => key !== '');
+  }
+  // ====================================================================
     // 显示设置界面
     function showSettings(contentDiv) {
         const currentKey = getApiKey();
@@ -2883,11 +2894,14 @@ const capturedSubtitles = new Map();
         // API Key 输入
         const keyLabel = document.createElement('label');
         keyLabel.textContent = langDict.set_key;
-        const input = document.createElement('input');
-        input.type = 'password';
+        const input = document.createElement('textarea');
+        input.id = 'gemini-api-key-input';
+        input.rows = 4;
+        input.cols = 50;
         input.placeholder = langDict.set_key_ph;
-        input.value = currentKey;
-        settings.appendChild(keyLabel);
+        input.value = getRawApiKeys().split('\n').map(key => key.trim()).filter(key => key !== '').join('\n');
+        input.style.fontFamily = 'monospace';
+        input.style.resize = 'vertical';
         settings.appendChild(input);
 
         // ================== 下面是需要替换的全新代码 ==================
